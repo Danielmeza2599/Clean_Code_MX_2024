@@ -1,0 +1,27 @@
+/*
+ * Daniel Meza
+ * 30/09/2024
+ * Activity: Create a code with the next Array of string Names = "Bosch", "Bangalore", "Mexico", "India"
+ * Select strings from Names, where string starts with "B", and print the result
+*/
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Array of strings
+    char *names[] = {"Bosch", "Bangalore", "Mexico", "India"};
+    int size = sizeof(names) / sizeof(names[0]);
+
+    printf("Names starting with 'B':\n");
+
+    // Loop through the array and check if the string starts with 'B'
+    for (int i = 0; i < size; i++) {
+        if (names[i][0] == 'B') {
+            printf("%s\n", names[i]);
+        }
+    }
+
+    return 0;
+}
+
+
